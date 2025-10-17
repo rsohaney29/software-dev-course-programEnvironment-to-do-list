@@ -1,0 +1,14 @@
+// Implicit type conversion example
+let result = "5" - 2; // Implicitly converts the string "5" to a number (5)
+console.log("The result is: " + result); // Outputs: The result is: 3
+
+// Boolean conversion
+let isValid = Boolean("false"); // "false" is a non-empty string, so it evaluates to true
+if (isValid) {
+    console.log("This is valid!"); // This will run because isValid is true
+}
+
+// Explicit type conversion
+let age = "25"; // age is a string
+let totalAge = Number(age) + 5; // Explicitly convert age to number (25) and add 5
+console.log("Total Age: " + totalAge); // Outputs: Total Age: 30
